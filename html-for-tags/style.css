@@ -1,0 +1,27 @@
+/*********************** 
+** PAGE CONFIGURATION **
+***********************/
+
+* {
+    text-decoration: none;
+}
+
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    width: 60%;
+    line-height: 32px;
+    background-image: url(./assets/gray-sand-1920x1080.png);
+    color:azure ;
+    margin: auto;
+}
+
+ul li a {
+    color: azure;
+    background-color: rgb(163, 163, 163);
+}
+
+code {
+    background-color: rgb(163, 163, 163);
+}
