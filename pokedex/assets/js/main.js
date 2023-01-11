@@ -1,9 +1,22 @@
+function convertPokemonToLi(pokemon) {
+    return `
+        <li class="pokemon ${pokemon.type}">
+            <span class="number">#${pokemon.number}</span>
+            <span class="name">${pokemon.name}</span>
+            <div class="detail">
+                <ol class="types">
+                    ${pokemon.types.map((type) => `<li class="type">${type}</li>`).join('')}
+                </ol>
 
-const offset = 0;
-const limit = 10;
-const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`;
+                <img src="${pokemon.photo}"
+                    alt="${pokemon.name}">
+            </div>
+        </li>
+    `
+}
 
-fetch(url)
-    .then((response) => response.json())
-    .then((responseBody) => console.log(responseBody))
-    .catch((error) => console.error(error))
+const pokemonList = document.getElementById('pokemonList');
+
+pokeApi.getPokemons().then((pokemons = []) => {
+    pokemonList.innerHTML += pokemons.map(convertPokemonToLi).join('')
+}); 
