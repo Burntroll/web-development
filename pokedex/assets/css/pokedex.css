@@ -76,7 +76,7 @@
     align-self: flex-end;
 }
 
-.pageToPage {
+#pageToPage {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -85,7 +85,7 @@
     padding: 1rem;
 }
 
-.loadMoreBtn {
+#loadMoreBtn {
     color: #fefefe;
     font-size: 1rem;
     background-color: #6c79db;
@@ -108,7 +108,7 @@
 .water {
     background-color: #678fee
 }
-.eletric {
+.electric {
     background-color: #f7cf2e
 }
 .ice {
